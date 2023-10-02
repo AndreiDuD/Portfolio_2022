@@ -1,12 +1,22 @@
-import "./App.css";
+import About from "./Components/About";
+import Introduction from "./Components/Introduction";
+import ProfilePic from "./Components/ProfilePic";
+import ProgressBar from "./Components/ProgressBar";
+import Services from "./Components/Services";
 
 function App() {
   return (
-    <>
-      <h1 className="text-3xl font-bold underline text-red-400 bg-red-600">
-        Hello world!
-      </h1>
-    </>
+    <div className="grid grid-cols-1 md:grid-cols-3">
+      <div className="col-span-2 p-5 mt-20">
+        <Introduction />
+        <About />
+        <Services />
+      </div>
+      <div className="hidden md:block">
+        <ProgressBar />
+        <ProfilePic />
+      </div>
+    </div>
   );
 }
 
