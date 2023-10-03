@@ -5,3 +5,49 @@
 html{
     scroll-behavior: smooth;
   }
+
+.orange-text-gradient {
+  background: #f12711; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to top,
+    #f12711,
+    #f5af19
+  ); 
+  background: linear-gradient(
+    to top,
+    #f12711,
+    #f5af19
+  ); 
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.react-gradient {
+  background: #61DAFB; /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #61DAFB, #232323); 
+  background: linear-gradient(to right, #61DAFB, #232323); 
+}
+.nextjs-gradient {
+  background: #000000; /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #000000, #FFFFFF); 
+  background: linear-gradient(to right, #000000, #FFFFFF); 
+}
+.vitejs-gradient {
+  background: #646CFF; /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #646CFF, #FFFFFF); 
+  background: linear-gradient(to right, #646CFF, #FFFFFF); 
+}
+.tailwindcss-gradient {
+  background: #38B2AC; /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #38B2AC, #FFFFFF); 
+  background: linear-gradient(to right, #38B2AC, #FFFFFF); 
+}
+.python-gradient {
+  background: #306998; /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #306998, #FFFFFF); 
+  background: linear-gradient(to right, #306998, #FFFFFF); 
+}
+.javascript-gradient {
+  background: #F7DF1E; /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #F7DF1E, #FFFFFF); 
+  background: linear-gradient(to right, #F7DF1E, #FFFFFF); 
+}

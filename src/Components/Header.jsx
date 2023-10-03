@@ -6,7 +6,7 @@ import {
   TwitterIcon,
 } from "../Icons.jsx";
 import { useThemeSwitch } from "../Hooks/useThemeSwitch.js";
-import { cx } from "../utils/index.js";
+import { cx } from "../Utils/index.js";
 import { useState } from "react";
 
 function Header() {
@@ -23,7 +23,7 @@ function Header() {
     setMode(mode === "light" ? "dark" : "light");
   };
   return (
-    <nav className="flex items-center fixed w-full justify-between border-dark dark:border-light border-b-[1px] bg-light dark:bg-dark">
+    <header className="flex items-center fixed w-full justify-between bg-light dark:bg-dark z-50">
       <div className="w-20 h-20 p-2">
         <img
           src="./logo.png"
@@ -33,17 +33,16 @@ function Header() {
       </div>
       <div className="hidden md:flex gap-14">
         {menu.map((item, index) => (
-          <div
-            key={index}
-            onClick={() => setSelectedItem(item.id)}
-            className={cx(
-              "cursor-pointer font-medium uppercase text-dark/80 dark:text-light hover:scale-110",
-              selectedItem === item.id
-                ? "underline underline-offset-8 font-extrabold"
-                : ""
-            )}
-          >
-            <h2 className="uppercase">{item.name}</h2>
+          <div key={index} onClick={() => setSelectedItem(item.id)}>
+            <h2
+              className={`cursor-pointer font-medium uppercase transition duration-200 ${
+                selectedItem === item.id
+                  ? "text-accent dark:text-accentDark border-b-2"
+                  : "text-dark/80 dark:text-light mb-[2px] hover:mb-0"
+              }  hover:scale-110 hover:text-accent dark:hover:text-accentDark hover:border-b-2`}
+            >
+              {item.name}
+            </h2>
           </div>
         ))}
       </div>
@@ -88,7 +87,7 @@ function Header() {
           <GithubIcon className="w-4 hover:scale-125 transition-all ease duration-200 dark:fill-light" />
         </a>
       </div>
-    </nav>
+    </header>
   );
 }
 

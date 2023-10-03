@@ -1,10 +1,8 @@
-import Strings from "../Shared/Strings";
-
 function About() {
   return (
-    <div className="mt-12 px-44 text-center flex flex-col items-center">
+    <section className="mt-12 text-center flex flex-col items-center">
       <h2 className="text-2xl bold text-dark dark:text-light">
-        {Strings.ABOUT_HEADING}
+        Full-Stack Developer and Data Analyst
       </h2>
       <svg
         fill="none"
@@ -21,7 +19,14 @@ function About() {
           d="M19.5 5.25l-7.5 7.5-7.5-7.5m15 6l-7.5 7.5-7.5-7.5"
         />
       </svg>
-      <h2 className="my-5 text-gray ">{Strings.ABOUT_DESC}</h2>
+      <h2 className="my-5 text-gray p-2 md:px-24 lg:px-44">
+        As a Full-Stack Developer, I immerse myself in crafting dynamic,
+        user-centric web applications that bridge the gap between innovation and
+        user experience. My toolkit includes a versatile array of technologies.
+        I am excited to showcase my portfolio, where you can explore my projects
+        and witness the fusion of my data-driven insights and web development
+        skills.
+      </h2>
       <svg
         fill="none"
         stroke="currentColor"
@@ -37,7 +42,7 @@ function About() {
           d="M4.5 12.75l7.5-7.5 7.5 7.5m-15 6l7.5-7.5 7.5 7.5"
         />
       </svg>
-    </div>
+    </section>
   );
 }
 

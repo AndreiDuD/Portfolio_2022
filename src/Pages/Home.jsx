@@ -1,8 +1,10 @@
 import About from "../Components/About";
+import Contact from "../Components/Contact";
 import Introduction from "../Components/Introduction";
 import ProfilePic from "../Components/ProfilePic";
 import ProgressBar from "../Components/ProgressBar";
-import Services from "../Components/Services";
+import Projects from "../Components/Projects";
+import Skills from "../Components/Skills";
 
 function Home() {
   return (
@@ -10,7 +12,9 @@ function Home() {
       <div className="col-span-2 p-5 mt-20">
         <Introduction />
         <About />
-        <Services />
+        <Skills />
+        <Projects />
+        <Contact />
       </div>
       <div className="hidden md:block">
         <ProgressBar />

@@ -1,4 +1,4 @@
-import { cx } from "./utils";
+import { cx } from "./Utils";
 
 export const SunIcon = ({ className, ...rest }) => (
   <svg
