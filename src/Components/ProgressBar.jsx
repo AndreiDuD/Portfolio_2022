@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 
 function ProgressBar() {
-  const [scrollTop, setscrollTop] = useState<number>(0.0);
+  const [scrollTop, setscrollTop] = useState();
 
   useEffect(() => {
     window.addEventListener("scroll", onScroll);

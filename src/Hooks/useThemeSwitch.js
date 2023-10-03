@@ -1,5 +1,3 @@
-"use client";
-
 import { useEffect, useState } from "react";
 
 export function useThemeSwitch() {
@@ -43,10 +41,8 @@ export function useThemeSwitch() {
   }, []);
 
   useEffect(() => {
-    toggleTheme(mode)
-  }, [mode])
-  
+    toggleTheme(mode);
+  }, [mode]);
 
-
-  return [mode, setMode]
+  return [mode, setMode];
 }

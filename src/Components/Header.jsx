@@ -5,12 +5,12 @@ import {
   SunIcon,
   TwitterIcon,
 } from "../Icons.jsx";
-import { useThemeSwitch } from "../Hooks/useThemeSwitch";
-import { cx } from "../utils";
+import { useThemeSwitch } from "../Hooks/useThemeSwitch.js";
+import { cx } from "../utils/index.js";
 import { useState } from "react";
 
 function Header() {
-  const [selectedItem, setSelectedItem] = useState(null);
+  const [selectedItem, setSelectedItem] = useState();
   const [mode, setMode] = useThemeSwitch();
   const menu = [
     { id: 1, name: "Home" },
