@@ -6,7 +6,7 @@ import {
   TwitterIcon,
 } from "../Icons.jsx";
 import { useThemeSwitch } from "../Hooks/useThemeSwitch.js";
-import { cx } from "../Utils";
+import { cx } from "../utils/index.js";
 import { useState } from "react";
 
 function Header() {
